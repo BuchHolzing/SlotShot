@@ -1,0 +1,59 @@
+body {
+    background: url('assets/images/background/background.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.slot-container {
+    text-align: center;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #d4af37;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background: #333;
+    padding: 20px;
+    overflow: hidden;
+    width: 320px;
+    height: 300px;
+    position: relative;
+}
+
+.reel {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.reel img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    transition: transform 0.5s ease-out;
+}
+
+#spinButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px #c66900;
+    transition: all 0.3s;
+}
+
+#spinButton:active {
+    box-shadow: 0 2px #c66900;
+    transform: translateY(3px);
+}
