@@ -1,0 +1,76 @@
+body {
+    background-image: url('/C:/Users/r.klochkov/Desktop/projectJS/SlotShot/Client/assets/images/background/background_slots.png');
+    background-size: cover; /* Масштабирует изображение так, чтобы оно покрывало весь экран без искажений */
+    background-position: center; /* Центрирует изображение по горизонтали и вертикали */
+    background-repeat: no-repeat; /* Запрещает повторение фонового изображения */
+    background-attachment: fixed; /* Фон остается фиксированным при прокрутке страницы */
+    width: 100vw; /* Задает ширину body равной 100% ширины экрана */
+    height: 100vh; /* Задает высоту body равной 100% высоты экрана */
+    margin: 0; /* Убирает внешние отступы, чтобы фон заполнил весь экран */
+    display: flex; /* Использует flexbox для центрирования содержимого */
+    flex-direction: column; /* Размещает элементы в колонку */
+    justify-content: center; /* Центрирует содержимое по вертикали */
+    font-family: 'Press Start 2P', cursive;
+    align-items: center; /* Центрирует содержимое по горизонтали */
+}
+.slot-machine {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Автоматический размер колонок */
+    grid-template-rows: repeat(3, 1fr); /* Автоматический размер строк */
+    gap: 5px;
+    border: 10px solid gold;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    background: linear-gradient(180deg, #380101, #740303);
+    padding: 1vw; /* Используем проценты или vh/vw */
+    position: relative;
+    width: 90vw; /* Машина занимает 90% ширины окна */
+    max-width: 1200px; /* Ограничиваем максимальную ширину */
+    height: 60vh; /* 60% высоты экрана */
+    max-height: 800px; /* Ограничение по высоте */
+}
+.slot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(180deg, #380101, #740303);
+    border: 1px solid gold;
+    border-radius: 10px;
+    width: 100%; /* Слот занимает всю ширину своей колонки */
+    height: 100%; /* Слот занимает всю высоту своей строки */
+    transition: transform 0.5s ease-in-out;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.button {
+    background: linear-gradient(180deg, #ffcc00, #ff9900);
+    border: 3px solid gold;
+    padding: 30px 100px;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.7);
+    font-family: 'Press Start 2P', cursive;
+}
+.button:hover {
+    background: linear-gradient(180deg, #ffdd44, #ffaa22);
+}
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0px 3px 5px rgba(255, 215, 0, 0.8);
+}
+.slot img {
+    width: 150px;  /* Заполняет весь слот */
+    height: 150px;
+    object-fit: contain; /* Сохраняет пропорции */
+}

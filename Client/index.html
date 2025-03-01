@@ -4,59 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telegram Slot Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="slot-container">
-        <div class="slot-machine">
-            <div class="reel" id="reel1">
-                <img src="assets/images/symbols/apple.png" alt="Apple">
-                <img src="assets/images/images/symbols/banana.png" alt="Banana">
-                <img src="assets/images/symbols/bar.png" alt="Bar">
-                <img src="assets/images/symbols/blueberry.png" alt="Blueberry">
-                <img src="assets/images/symbols/cherry.png" alt="Cherry">
-                <img src="assets/images/symbols/crown.png" alt="Crown">
-                <img src="assets/images/symbols/diamond.png" alt="Diamond">
-                <img src="assets/images/symbols/grappe.png" alt="Grape">
-                <img src="assets/images/symbols/orange.png" alt="Orange">
-                <img src="assets/images/symbols/raspberry.png" alt="Raspberry">
-                <img src="assets/images/symbols/seven.png" alt="Seven">
-                <img src="assets/images/symbols/sheet.png" alt="Sheet">
-                <img src="assets/images/symbols/watermelon.png" alt="Watermelon">
-            </div>
-            <div class="reel" id="reel2">
-                <img src="assets/images/symbols/apple.png" alt="Apple">
-                <img src="assets/images/symbols/banana.png" alt="Banana">
-                <img src="assets/images/symbols/bar.png" alt="Bar">
-                <img src="assets/images/symbols/blueberry.png" alt="Blueberry">
-                <img src="assets/images/symbols/cherry.png" alt="Cherry">
-                <img src="assets/images/symbols/crown.png" alt="Crown">
-                <img src="assets/images/symbols/diamond.png" alt="Diamond">
-                <img src="assets/images/symbols/grappe.png" alt="Grape">
-                <img src="assets/images/symbols/orange.png" alt="Orange">
-                <img src="assets/images/symbols/raspberry.png" alt="Raspberry">
-                <img src="assets/images/symbols/seven.png" alt="Seven">
-                <img src="assets/images/symbols/sheet.png" alt="Sheet">
-                <img src="assets/images/symbols/watermelon.png" alt="Watermelon">
-            </div>
-            <div class="reel" id="reel3">
-                <img src="assets/images/symbols/apple.png" alt="Apple">
-                <img src="assets/images/symbols/banana.png" alt="Banana">
-                <img src="assets/images/symbols/bar.png" alt="Bar">
-                <img src="assets/images/symbols/blueberry.png" alt="Blueberry">
-                <img src="assets/images/symbols/cherry.png" alt="Cherry">
-                <img src="assets/images/symbols/crown.png" alt="Crown">
-                <img src="assets/images/symbols/diamond.png" alt="Diamond">
-                <img src="assets/images/symbols/grappe.png" alt="Grape">
-                <img src="assets/images/symbols/orange.png" alt="Orange">
-                <img src="assets/images/symbols/raspberry.png" alt="Raspberry">
-                <img src="assets/images/symbols/seven.png" alt="Seven">
-                <img src="assets/images/symbols/sheet.png" alt="Sheet">
-                <img src="assets/images/symbols/watermelon.png" alt="Watermelon">
-            </div>
-        </div>
-        <button id="spinButton">СПИН</button>
+    <div class="slot-machine" id="slotMachine">
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\apple.png" alt="Apple"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\bar.png" alt="Bar"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\bell.png" alt="Bell"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\cherries.png" alt="Cherries"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\grape.png" alt="Grape"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\lemon.png" alt="Lemon"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\orange.png" alt="Orange"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\plum.png" alt="Plum"></div>
+        <div class="slot"><img src="C:\Users\r.klochkov\Desktop\projectJS\SlotShot\Client\assets\images\symbols\seven.png" alt="Seven"></div>
     </div>
-    <script src="script.js"></script>
+    <div class="buttons">
+        <button class="button" onclick="spin()">Spin</button>
+        <button class="button" onclick="spin()">Auto</button>
+    </div>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
